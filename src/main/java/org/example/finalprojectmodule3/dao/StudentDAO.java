@@ -21,7 +21,7 @@ public class StudentDAO {
                 students.add(new Student(
                         rs.getString("id"),
                         rs.getString("name"),
-                        rs.getString("student_class")
+                        rs.getString("class")
                 ));
             }
         } catch (SQLException e) {
@@ -40,7 +40,7 @@ public class StudentDAO {
                 return new Student(
                         rs.getString("id"),
                         rs.getString("name"),
-                        rs.getString("student_class")
+                        rs.getString("class")
                 );
             }
         } catch (SQLException e) {

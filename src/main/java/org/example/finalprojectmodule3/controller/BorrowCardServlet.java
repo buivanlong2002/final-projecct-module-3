@@ -17,6 +17,6 @@ public class BorrowCardServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<BorrowCard> borrowCards = borrowCardService.getAllBorrowingCards();
         request.setAttribute("borrowCards", borrowCards);
-        request.getRequestDispatcher("/views/borrow-cards.jsp").forward(request, response);
+        request.getRequestDispatcher("borrowed-books.jsp").forward(request, response);
     }
 }
