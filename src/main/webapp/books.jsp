@@ -35,7 +35,7 @@
       <td>${book.quantity}</td>
       <td>${book.description}</td>
       <td>
-        <form action="borrow-form.jsp" method="get">
+        <form action="borrow" method="get">
           <input type="hidden" name="bookId" value="${book.id}" />
           <button type="submit" class="btn btn-primary btn-sm" ${book.quantity == 0 ? 'disabled' : ''}>Mượn</button>
         </form>

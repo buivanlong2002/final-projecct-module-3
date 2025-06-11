@@ -17,6 +17,6 @@ public class BookServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Book> books = bookService.getAllBooks();
         request.setAttribute("books", books);
-        request.getRequestDispatcher("/views/books.jsp").forward(request, response);
+        request.getRequestDispatcher("/books.jsp").forward(request, response);
     }
 }
